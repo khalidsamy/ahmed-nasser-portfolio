@@ -7,7 +7,7 @@ export default function Skills() {
   const skillCategories = [
     {
       title: "Programming Languages",
-      skills: ["C", "C++", "C#", "Java", "Python", "JavaScript", "SQL"],
+      skills: ["C", "C++", "C#", "Python", "Java", "JavaScript"],
       color:
         "bg-blue-50 dark:bg-blue-900/20 border-blue-200 dark:border-blue-800",
       textColor: "text-blue-700 dark:text-blue-400",
@@ -20,7 +20,7 @@ export default function Skills() {
       textColor: "text-purple-700 dark:text-purple-400",
     },
     {
-      title: "Backend",
+      title: "Backend & Databases",
       skills: [
         "FastAPI",
         "Spring Boot",
@@ -28,7 +28,6 @@ export default function Skills() {
         "SQLAlchemy",
         "PostgreSQL",
         "MySQL",
-        "MongoDB",
       ],
       color:
         "bg-green-50 dark:bg-green-900/20 border-green-200 dark:border-green-800",
@@ -40,9 +39,6 @@ export default function Skills() {
         "Git",
         "Docker",
         "Linux",
-        "Jupyter Notebook",
-        "Redis",
-        "GraphQL",
       ],
       color:
         "bg-orange-50 dark:bg-orange-900/20 border-orange-200 dark:border-orange-800",

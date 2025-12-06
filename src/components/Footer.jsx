@@ -25,7 +25,7 @@ export default function Footer() {
               Portfolio
             </h3>
             <p className="text-gray-400">
-              Machine Learning Engineer & Back-End Developer
+              AI & ML Enthusiast
             </p>
           </div>
 

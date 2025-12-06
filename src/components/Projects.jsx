@@ -5,6 +5,15 @@ import { FaGithub } from "react-icons/fa";
 
 export default function Projects() {
   const projects = [
+  {
+      title: "ML-Workshop",
+      description:
+        "Hands-on machine learning journey with from-scratch implementations and reproducible experiments.",
+      tech: ["Python", "Scikit-Learn", "Pandas", "NumPy", "Matplotlib", "Seaborn"],
+      github: "https://github.com/AhmedNasser23/ML-Workshop",
+      image:
+        "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=1200&q=80",
+    },
     {
       title: "Fandango Ratings Bias EDA (2015)",
       description:
@@ -22,6 +31,15 @@ export default function Projects() {
       github: "https://github.com/AhmedNasser23/FastAPI-Blog-API",
       image:
         "https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=1200&q=80",
+    },
+    {
+      title: "NFG-Library",
+      description:
+        "Modular Java library implementing Neural Networks, Fuzzy Logic, and Genetic Algorithms with case studies.",
+      tech: ["Java", "Neural Networks", "Fuzzy Logic", "Genetic Algorithms"],
+      github: "https://github.com/AhmedNasser23/NFG-Library",
+      image:
+        "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
     },
     {
       title: "BazzarBook – E-commerce Platform",

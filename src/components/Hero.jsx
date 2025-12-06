@@ -77,7 +77,7 @@ export default function Hero() {
         <motion.p
           variants={itemVariants}
           className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-6">
-          Machine Learning Engineer & Back-End Developer
+          AI & ML Enthusiast
         </motion.p>
 
         {/* Description */}
