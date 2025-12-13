@@ -69,7 +69,7 @@ export default function Hero() {
           className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white leading-tight mb-4">
           Hi, I'm{" "}
           <span className="text-[#1a73e8] dark:text-blue-400">
-            Ahmed Nasser Hemdan
+            Ahmed Nasser
           </span>
         </motion.h1>
 

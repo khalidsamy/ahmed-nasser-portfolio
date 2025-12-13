@@ -42,13 +42,13 @@ export default function Projects() {
         "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
     },
     {
-      title: "BazzarBook – E-commerce Platform",
+      title: "BazzarBook",
       description:
         "Full e-commerce system with role-based authentication, product management, Stripe payments, and responsive UI.",
       tech: ["C#", "ASP.NET Core", "Entity Framework", "SQL Server"],
       github: "https://github.com/AhmedNasser23/BazzarBook",
       image:
-        "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1200&q=80",
     },
   ];
 

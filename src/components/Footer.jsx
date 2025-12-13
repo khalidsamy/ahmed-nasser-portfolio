@@ -15,7 +15,7 @@ export default function Footer() {
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
-      className="bg-gray-900 dark:bg-black text-gray-300 py-12 px-6 md:px-12 lg:px-24 transition-all duration-300">
+      className="bg-gray-900 dark:bg-black text-gray-300 py-12 px-6 md:px-12 lg:px-24 transition-all duration-300 border-t border-gray-800">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
@@ -39,6 +39,7 @@ export default function Footer() {
                 "Home",
                 "About",
                 "Skills",
+                "Certifications",
                 "Experience",
                 "Projects",
                 "Contact",
@@ -82,7 +83,7 @@ export default function Footer() {
                   href="https://github.com/AhmedNasser23"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-[#1a73e8] dark:hover:text-blue-400 transition-colors flex items-center gap-2">
+                  className="text-gray-600 dark:text-gray-400 hover:text-[#1a73e8] dark:hover:text-blue-400 transition-colors flex items-center gap-2">
                   <svg
                     className="w-4 h-4"
                     fill="currentColor"
@@ -122,9 +123,9 @@ export default function Footer() {
         </div>
 
         {/* Copyright */}
-        <div className="border-t border-gray-800 dark:border-gray-700 pt-8 text-center text-gray-400">
+        <div className="border-t border-gray-800 pt-8 text-center text-gray-400">
           <p>
-            © {new Date().getFullYear()} Ahmed Nasser Hemdan. All rights
+            © {new Date().getFullYear()} Ahmed Nasser. All rights
             reserved.
           </p>
         </div>

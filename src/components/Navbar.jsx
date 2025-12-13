@@ -19,6 +19,7 @@ export default function Navbar() {
     "Home",
     "About",
     "Skills",
+    "Certifications",
     "Experience",
     "Projects",
     "Contact",
