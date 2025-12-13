@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Award } from "lucide-react";
 
 const Certifications = () => {
-  const certifications = [
+    const certifications = [
     {
       name: "Machine Learning Specialization",
       issuer: "DeepLearning.AI",
