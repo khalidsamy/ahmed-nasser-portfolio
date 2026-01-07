@@ -6,26 +6,35 @@ import { Code2 } from "lucide-react";
 export default function Skills() {
   const skillCategories = [
     {
-      title: "Programming Languages",
-      skills: ["C", "C++", "C#", "Python", "Java", "JavaScript"],
+      title: "Core Programming Languages",
+      skills: ["Python", "Java", "JavaScript","C", "C++", "C#"],
       color:
         "bg-blue-50 dark:bg-blue-900/20 border-blue-200 dark:border-blue-800",
       textColor: "text-blue-700 dark:text-blue-400",
     },
     {
-      title: "ML & AI",
-      skills: ["Scikit-learn", "NumPy", "Pandas", "Matplotlib", "Seaborn"],
+      title: "Machine Learning",
+      skills: [
+        "scikit-learn",
+        "NumPy",
+        "Pandas",
+        "Supervised Learning",
+        "Neural Networks",
+        "Unsupervised Learning",
+        "Exploratory Data Analysis",
+      ],
       color:
         "bg-purple-50 dark:bg-purple-900/20 border-purple-200 dark:border-purple-800",
       textColor: "text-purple-700 dark:text-purple-400",
     },
     {
-      title: "Backend & Databases",
+      title: "Backend Engineering",
       skills: [
         "FastAPI",
         "Spring Boot",
         "ASP.NET Core",
-        "SQLAlchemy",
+        "REST APIs",
+        "JWT Authentication",
         "PostgreSQL",
         "MySQL",
       ],
@@ -34,17 +43,14 @@ export default function Skills() {
       textColor: "text-green-700 dark:text-green-400",
     },
     {
-      title: "Tools",
-      skills: [
-        "Git",
-        "Docker",
-        "Linux",
-      ],
+      title: "Developer Tools & Platforms",
+      skills: ["Git", "Docker", "Linux"],
       color:
         "bg-orange-50 dark:bg-orange-900/20 border-orange-200 dark:border-orange-800",
       textColor: "text-orange-700 dark:text-orange-400",
     },
   ];
+
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -109,7 +115,7 @@ export default function Skills() {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.1 }}
           className="text-center text-gray-600 dark:text-gray-400 mb-16 max-w-2xl mx-auto">
-          Technologies and tools I work with to build innovative solutions
+          Technologies and tools I use to design, build, and maintain reliable software systems
         </motion.p>
 
         <motion.div

@@ -80,7 +80,7 @@ export default function Hero() {
           variants={itemVariants}
           className="inline-flex items-center gap-2 px-4 py-2 mb-6 bg-gradient-to-r from-blue-100 to-purple-100 dark:from-blue-900/40 dark:to-purple-900/40 text-blue-700 dark:text-blue-300 font-semibold rounded-full text-sm shadow-lg border border-blue-200 dark:border-blue-800/50">
           <Sparkles className="w-4 h-4" />
-          Computer Science Student
+          Software Engineer • Backend & ML
         </motion.div>
 
         {/* Title */}
@@ -98,14 +98,15 @@ export default function Hero() {
         <motion.p
           variants={itemVariants}
           className="text-2xl md:text-3xl font-bold text-gray-800 dark:text-gray-100 mb-4">
-          AI & ML Enthusiast
+          Software Engineer | Backend & ML
         </motion.p>
 
         {/* Description */}
         <motion.p
           variants={itemVariants}
           className="text-lg text-gray-600 dark:text-gray-300 mb-8 max-w-xl leading-relaxed">
-          Fourth-year Computer Science student passionate about machine learning, backend engineering, and building scalable software solutions that make a real impact.
+          Computer Science student with hands-on experience building backend systems and data-driven applications. 
+          Focused on developing scalable, maintainable software and applying machine learning concepts in real-world projects.
         </motion.p>
 
         {/* Buttons */}
@@ -117,7 +118,7 @@ export default function Hero() {
             whileTap={{ scale: 0.95 }}
             onClick={() => scrollToSection("Projects")}
             className="bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-500 dark:to-purple-600 text-white font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 flex items-center justify-center gap-2 group">
-            View Projects
+            Explore Projects
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </motion.button>
           <motion.button
@@ -135,7 +136,7 @@ export default function Hero() {
           className="flex flex-wrap gap-8 md:gap-12 justify-center md:justify-start">
           {[
             { number: "10+", label: "Projects", icon: Code2 },
-            { number: "5+", label: "Tech Stack", icon: Zap },
+            { number: "5+", label: "Frameworks & Tools", icon: Zap },
             { number: "3+", label: "Years Learning", icon: Brain },
           ].map((stat, index) => {
             const Icon = stat.icon;

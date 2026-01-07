@@ -10,9 +10,9 @@ export default function Experience() {
       company: "GTC",
       period: "Sep 2025 – Oct 2025",
       points: [
-        "Selected among the top candidates from 2,000+ applicants.",
-        "Represented AI/ML community in events and tech initiatives.",
-        "Supported ML workshops and innovation programs.",
+        "Selected from over 2,000 applicants to represent the Machine Learning community.",
+        "Participated in technical discussions and knowledge-sharing sessions covering core ML concepts and data analysis.",
+        "Supported peers in understanding machine learning fundamentals through workshops and community initiatives.",
       ],
     },
     {
@@ -20,13 +20,13 @@ export default function Experience() {
       company: "Banque Misr",
       period: "Aug 2024 – Sep 2024",
       points: [
-        "Gained experience with Swift, UIKit, AutoLayout.",
-        "Built 15+ reusable UI components.",
-        "Improved app UX and implemented API integrations.",
-        "Practiced Agile workflow inside enterprise team.",
+        "Developed and maintained production-level mobile application features within an agile development environment.",
+        "Integrated RESTful APIs to enable reliable client–server communication and data-driven application behavior.",
+        "Improved application usability and performance through iterative development, debugging, and optimization.",
       ],
     },
   ];
+
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -104,7 +104,7 @@ export default function Experience() {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.1 }}
           className="text-lg text-gray-600 dark:text-gray-400 text-center mb-16 max-w-2xl mx-auto">
-          My professional journey and key achievements
+          Hands-on experience building systems and contributing to real-world projects
         </motion.p>
 
         <motion.div

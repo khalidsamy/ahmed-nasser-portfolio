@@ -2,53 +2,62 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FolderKanban } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
+import { image, title } from "framer-motion/client";
 
 export default function Projects() {
   const projects = [
   {
-      title: "ML-Workshop",
-      description:
-        "Hands-on machine learning journey with from-scratch implementations and reproducible experiments.",
-      tech: ["Python", "Scikit-Learn", "Pandas", "NumPy", "Matplotlib", "Seaborn"],
+    title: "ML-Workshop",
+    description:
+      "Hands-on machine learning experiments with from-scratch implementations, model evaluation, and reproducible workflows.",
+    tech: ["Python", "scikit-learn", "NumPy", "Pandas"],
       github: "https://github.com/AhmedNasser23/ML-Workshop",
       image:
         "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=1200&q=80",
     },
-    {
-      title: "Fandango Ratings Bias EDA (2015)",
-      description:
-        "Exploratory data analysis to investigate potential bias in Fandango's 2015 movie ratings using statistical and visual techniques.",
-      tech: ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn"],
-      github: "https://github.com/AhmedNasser23/Fandango-Ratings-Bias-EDA-2015",
-      image:
-        "https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=1200&q=80",
-    },
-    {
-      title: "FastAPI Blog API",
-      description:
-        "A production-ready RESTful API with JWT auth, relational data models, CRUD operations, Alembic migrations, and PostgreSQL integration.",
-      tech: ["FastAPI", "Python", "PostgreSQL", "SQLAlchemy", "Alembic"],
-      github: "https://github.com/AhmedNasser23/FastAPI-Blog-API",
-      image:
-        "https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=1200&q=80",
-    },
-    {
-      title: "NFG-Library",
-      description:
-        "Modular Java library implementing Neural Networks, Fuzzy Logic, and Genetic Algorithms with case studies.",
-      tech: ["Java", "Neural Networks", "Fuzzy Logic", "Genetic Algorithms"],
+        {
+    title: "NFG-Library",
+    description:
+      "Modular Java library implementing neural networks, fuzzy logic, and genetic algorithms with practical case studies.",
+    tech: ["Java", "Neural Networks", "Genetic Algorithms", "Fuzzy Logic"],
       github: "https://github.com/AhmedNasser23/NFG-Library",
       image:
         "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
     },
     {
-      title: "BazzarBook",
-      description:
-        "Full e-commerce system with role-based authentication, product management, Stripe payments, and responsive UI.",
-      tech: ["C#", "ASP.NET Core", "Entity Framework", "SQL Server"],
+    title: "Fandango Ratings Bias EDA",
+    description:
+      "Exploratory data analysis project investigating bias in movie rating systems using statistical analysis and visualization.",
+    tech: ["Python", "Pandas", "Matplotlib"],
+      github: "https://github.com/AhmedNasser23/Fandango-Ratings-Bias-EDA-2015",
+      image:
+        "https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=1200&q=80",
+    },
+    {
+    title: "BazzarBook",
+    description:
+      "E-commerce backend system with secure payment processing, role-based authorization, and transactional business logic.",
+    tech: ["C#", "ASP.NET Core", "SQL Server", "Stripe"],
       github: "https://github.com/AhmedNasser23/BazzarBook",
       image:
         "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1200&q=80",
+    },
+    {
+      title: "E-Learning Management System",
+      description: "Multi-role learning management system supporting courses, users, and enrollment workflows.",
+      tech: ["Java", "Spring Boot", "PostgreSQL"],
+      github: "https://github.com/AhmedNasser23/E-Learnig-Management-System",
+      image: "https://plus.unsplash.com/premium_photo-1681488245781-6d5617e3dba9?auto=format&fit=crop&w=1200&q=80",
+
+    },
+    {
+      title: "FastAPI Blog API",
+      description:
+        "Production-ready backend system featuring JWT authentication, role-based access control, and relational data modeling with PostgreSQL.",
+      tech: ["Python", "FastAPI", "Docker", "PostgreSQL", "SQLAlchemy", "Alembic"],
+      github: "https://github.com/AhmedNasser23/FastAPI-Blog-API",
+      image:
+        "https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=1200&q=80",
     },
   ];
 

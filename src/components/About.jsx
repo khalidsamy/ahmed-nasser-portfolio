@@ -92,7 +92,7 @@ export default function About() {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.1 }}
           className="text-center text-gray-600 dark:text-gray-400 mb-16 max-w-2xl mx-auto">
-          Computer Science student passionate about Machine Learning and Back-End Development
+          Software engineer focused on backend systems and applied machine learning
         </motion.p>
 
         <motion.div
@@ -130,7 +130,7 @@ export default function About() {
                   <Code2 className="w-5 h-5 text-blue-600 dark:text-blue-400" />
                 </div>
                 <div>
-                  <p className="text-xs text-gray-600 dark:text-gray-400">ML & Backend Enthusiast</p>
+                  <p className="text-xs text-gray-600 dark:text-gray-400">Software Engineer (Backend & ML)</p>
                 </div>
               </div>
             </motion.div>
@@ -138,13 +138,12 @@ export default function About() {
 
           {/* Text */}
           <motion.div variants={textVariants} className="order-1 md:order-2">
-            <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 leading-relaxed mb-6 font-medium">
-              I'm a Computer Science student specializing in <span className="text-blue-600 dark:text-blue-400 font-bold">Machine Learning</span> and <span className="text-purple-600 dark:text-purple-400 font-bold">Back-End Development</span>. I enjoy building intelligent systems, APIs, and scalable backend architectures using modern technologies.
-            </p>
-            <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
-              My passion lies in solving complex problems through code and creating solutions that make a real impact. I'm always eager to learn new technologies and contribute to meaningful projects.
-            </p>
-            
+          <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 leading-relaxed mb-6 font-medium">
+            I'm a Computer Science student with a strong focus on <span className="text-blue-600 dark:text-blue-400 font-bold">backend engineering</span> and <span className="text-purple-600 dark:text-purple-400 font-bold">applied machine learning</span>. I build scalable backend systems, APIs, and data-driven applications using modern software engineering principles.
+          </p>
+          <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
+            I enjoy solving complex technical problems through clean, maintainable code and thoughtful system design, with an emphasis on reliability, scalability, and real-world impact.
+          </p>            
             {/* Highlights */}
             <div className="space-y-3">
               <motion.div
