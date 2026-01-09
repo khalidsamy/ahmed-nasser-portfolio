@@ -17,17 +17,25 @@ export default function Footer() {
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
-      className="bg-gradient-to-b from-gray-900 to-black dark:from-slate-900 dark:to-black text-gray-300 py-16 px-6 md:px-12 lg:px-24 transition-all duration-300 border-t border-gradient-to-r from-blue-500/20 via-purple-500/20 to-blue-500/20 relative overflow-hidden">
+      className="
+        bg-white dark:bg-gradient-to-b dark:from-slate-900 dark:to-black
+        text-gray-700 dark:text-gray-300
+        py-16 px-6 md:px-12 lg:px-24
+        transition-all duration-300
+        border-t border-gray-200 dark:border-gray-800
+        relative overflow-hidden
+      ">
       
-      {/* Decorative background */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+      {/* Decorative background (dark mode only) */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none hidden dark:block">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl opacity-30"></div>
         <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl opacity-30"></div>
       </div>
+
       
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Top Section */}
-        <div className="grid md:grid-cols-3 gap-12 mb-12 pb-12 border-b border-gray-800/50">
+        <div className="grid md:grid-cols-3 gap-12 mb-12 pb-12 border-b border-gray-200 dark:border-gray-800/50">
           {/* Brand */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -40,11 +48,11 @@ export default function Footer() {
               <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500 to-purple-500 flex items-center justify-center">
                 <span className="font-bold text-white text-lg">AN</span>
               </div>
-              <h3 className="text-2xl font-bold text-white">
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
                 Portfolio
               </h3>
             </motion.div>
-            <p className="text-gray-400 text-sm leading-relaxed">
+            <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
               AI & ML Enthusiast passionate about building intelligent solutions and creating meaningful impact through technology.
             </p>
             {/* Social Icons */}
@@ -61,7 +69,9 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.2, y: -4 }}
                   whileTap={{ scale: 0.95 }}
-                  className="p-2.5 bg-gradient-to-br from-blue-900/50 to-purple-900/50 hover:from-blue-800 hover:to-purple-800 rounded-lg text-gray-300 hover:text-white transition-all duration-300 border border-blue-800/30 hover:border-blue-600/50">
+                  className="p-2.5 bg-gray-100 dark:bg-gradient-to-br dark:from-blue-900/50 dark:to-purple-900/50
+text-gray-700 dark:text-gray-300
+hover:text-blue-600 dark:hover:text-white hover:from-blue-800 hover:to-purple-800 rounded-lg text-gray-300 hover:text-white transition-all duration-300 border border-blue-800/30 hover:border-blue-600/50">
                   <social.icon className="w-5 h-5" />
                 </motion.a>
               ))}
@@ -76,7 +86,7 @@ export default function Footer() {
             transition={{ duration: 0.6, delay: 0.1 }}>
             <div className="flex items-center gap-2 mb-6">
               <Zap className="w-5 h-5 text-blue-400" />
-              <h4 className="text-lg font-bold text-white">Quick Links</h4>
+              <h4 className="text-lg font-bold text-gray-900 dark:text-white">Quick Links</h4>
             </div>
             <ul className="space-y-3">
               {[
@@ -96,7 +106,7 @@ export default function Footer() {
                   transition={{ delay: idx * 0.05 }}>
                   <button
                     onClick={() => scrollToSection(item)}
-                    className="text-gray-400 hover:text-blue-400 transition-colors duration-300 text-sm font-medium relative group">
+                    className="text-gray-600 dark:text-gray-400 hover:text-blue-400 transition-colors duration-300 text-sm font-medium relative group">
                     {item}
                     <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 group-hover:w-full transition-all duration-300"></span>
                   </button>
@@ -117,8 +127,10 @@ export default function Footer() {
                 <motion.a
                   href="mailto:ahmadhemdan280@gmail.com"
                   whileHover={{ x: 4 }}
-                  className="text-gray-400 hover:text-blue-400 transition-colors duration-300 flex items-center gap-3 group">
-                  <div className="p-2 bg-gradient-to-br from-blue-900/50 to-purple-900/50 rounded-lg group-hover:from-blue-800 group-hover:to-purple-800 transition-all duration-300">
+                  className="text-gray-600 dark:text-gray-400 hover:text-blue-400 transition-colors duration-300 flex items-center gap-3 group">
+                  <div className="p-2 bg-gray-100 dark:bg-gradient-to-br dark:from-blue-900/50 dark:to-purple-900/50
+text-gray-700 dark:text-gray-300
+hover:text-blue-600 dark:hover:text-white rounded-lg group-hover:from-blue-800 group-hover:to-purple-800 transition-all duration-300">
                     <Mail className="w-4 h-4" />
                   </div>
                   <span className="text-sm font-medium">ahmadhemdan280@gmail.com</span>
@@ -130,15 +142,19 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ x: 4 }}
-                  className="text-gray-400 hover:text-blue-400 transition-colors duration-300 flex items-center gap-3 group">
-                  <div className="p-2 bg-gradient-to-br from-blue-900/50 to-purple-900/50 rounded-lg group-hover:from-blue-800 group-hover:to-purple-800 transition-all duration-300">
+                  className="text-gray-600 dark:text-gray-400 hover:text-blue-400 transition-colors duration-300 flex items-center gap-3 group">
+                  <div className="p-2 bg-gray-100 dark:bg-gradient-to-br dark:from-blue-900/50 dark:to-purple-900/50
+text-gray-700 dark:text-gray-300
+hover:text-blue-600 dark:hover:text-white rounded-lg group-hover:from-blue-800 group-hover:to-purple-800 transition-all duration-300">
                     <Github className="w-4 h-4" />
                   </div>
                   <span className="text-sm font-medium">AhmedNasser23</span>
                 </motion.a>
               </li>
-              <li className="text-gray-400 flex items-center gap-3">
-                <div className="p-2 bg-gradient-to-br from-blue-900/50 to-purple-900/50 rounded-lg">
+              <li className="text-gray-600 dark:text-gray-400 flex items-center gap-3">
+                <div className="p-2 bg-gray-100 dark:bg-gradient-to-br dark:from-blue-900/50 dark:to-purple-900/50
+text-gray-700 dark:text-gray-300
+hover:text-blue-600 dark:hover:text-white rounded-lg">
                   <MapPin className="w-4 h-4" />
                 </div>
                 <span className="text-sm font-medium">Giza, Egypt</span>
@@ -153,7 +169,7 @@ export default function Footer() {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.3 }}
           className="pt-8 text-center">
-          <p className="text-gray-500 text-sm flex items-center justify-center gap-1">
+          <p className="text-gray-500 dark:text-gray-500 text-sm">
             © {new Date().getFullYear()} Ahmed Nasser. All rights reserved.
           </p>
         </motion.div>
