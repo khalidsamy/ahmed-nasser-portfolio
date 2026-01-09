@@ -109,26 +109,45 @@ export default function Hero() {
           Focused on developing scalable, maintainable software and applying machine learning concepts in real-world projects.
         </motion.p>
 
-        {/* Buttons */}
-        <motion.div
-          variants={itemVariants}
-          className="flex flex-col sm:flex-row gap-4 mb-12">
-          <motion.button
-            whileHover={{ scale: 1.05, y: -2 }}
-            whileTap={{ scale: 0.95 }}
-            onClick={() => scrollToSection("Projects")}
-            className="bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-500 dark:to-purple-600 text-white font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 flex items-center justify-center gap-2 group">
-            Explore Projects
-            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-          </motion.button>
-          <motion.button
-            whileHover={{ scale: 1.05, y: -2 }}
-            whileTap={{ scale: 0.95 }}
-            onClick={() => scrollToSection("Contact")}
-            className="border-2 border-gray-300 dark:border-gray-600 px-8 py-4 rounded-xl shadow-md bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 transition-all font-semibold text-gray-900 dark:text-white hover:border-blue-400 dark:hover:border-blue-500">
-            Get in Touch
-          </motion.button>
-        </motion.div>
+    {/* Buttons */}
+    <motion.div
+      variants={itemVariants}
+      className="flex flex-col sm:flex-row gap-4 mb-12"
+    >
+      {/* Explore Projects */}
+      <motion.button
+        whileHover={{ scale: 1.05, y: -2 }}
+        whileTap={{ scale: 0.95 }}
+        onClick={() => scrollToSection("Projects")}
+        className="bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-500 dark:to-purple-600 text-white font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 flex items-center justify-center gap-2 group"
+      >
+        Explore Projects
+        <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+      </motion.button>
+
+        {/* View CV */}
+      <motion.a
+        whileHover={{ scale: 1.05, y: -2 }}
+        whileTap={{ scale: 0.95 }}
+        href="/cv/Ahmed_Hemdan_Resume.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="border-2 border-gray-300 dark:border-gray-600 px-8 py-4 rounded-xl shadow-md bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 transition-all font-semibold text-gray-900 dark:text-white hover:border-blue-400 dark:hover:border-blue-500"
+      >
+        View CV
+      </motion.a>
+
+      {/* Get in Touch */}
+      <motion.button
+        whileHover={{ scale: 1.05, y: -2 }}
+        whileTap={{ scale: 0.95 }}
+        onClick={() => scrollToSection("Contact")}
+        className="border-2 border-gray-300 dark:border-gray-600 px-8 py-4 rounded-xl shadow-md bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 transition-all font-semibold text-gray-900 dark:text-white hover:border-blue-400 dark:hover:border-blue-500"
+      >
+        Get in Touch
+      </motion.button>
+    </motion.div>
+
 
         {/* Stats */}
         <motion.div
