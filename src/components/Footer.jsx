@@ -60,7 +60,7 @@ export default function Footer() {
               {[
                 { icon: Github, href: "https://github.com/AhmedNasser23", label: "GitHub" },
                 { icon: FaLinkedin, href: "https://www.linkedin.com/in/ahmed-nasser-91aab6279/", label: "LinkedIn" },
-                { icon: Mail, href: "mailto:ahmadhemdan280@gmail.com", label: "Email" },
+                { icon: Mail, href: "mailto:ahmedhemdan.tech@gmail.com", label: "Email" },
               ].map((social, idx) => (
                 <motion.a
                   key={idx}
@@ -125,7 +125,7 @@ hover:text-blue-600 dark:hover:text-white hover:from-blue-800 hover:to-purple-80
             <ul className="space-y-4">
               <li>
                 <motion.a
-                  href="mailto:ahmadhemdan280@gmail.com"
+                  href="mailto:ahmedhemdan.tech@gmail.com"
                   whileHover={{ x: 4 }}
                   className="text-gray-600 dark:text-gray-400 hover:text-blue-400 transition-colors duration-300 flex items-center gap-3 group">
                   <div className="p-2 bg-gray-100 dark:bg-gradient-to-br dark:from-blue-900/50 dark:to-purple-900/50
@@ -133,7 +133,7 @@ text-gray-700 dark:text-gray-300
 hover:text-blue-600 dark:hover:text-white rounded-lg group-hover:from-blue-800 group-hover:to-purple-800 transition-all duration-300">
                     <Mail className="w-4 h-4" />
                   </div>
-                  <span className="text-sm font-medium">ahmadhemdan280@gmail.com</span>
+                  <span className="text-sm font-medium">ahmedhemdan.tech@gmail.com</span>
                 </motion.a>
               </li>
               <li>

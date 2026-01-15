@@ -53,8 +53,8 @@ export default function Contact() {
   const contactInfo = [
     {
       label: "Email",
-      value: "ahmadhemdan280@gmail.com",
-      link: "mailto:ahmadhemdan280@gmail.com",
+      value: "ahmedhemdan.tech@gmail.com",
+      link: "mailto:ahmedhemdan.tech@gmail.com",
       icon: <Mail className="w-6 h-6" />,
     },
     {
