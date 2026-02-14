@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Brain, ArrowRight, Zap, Code2, Sparkles } from "lucide-react";
 
@@ -10,6 +10,8 @@ export default function Hero() {
       element.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+const [showResumeOptions, setShowResumeOptions] = useState(false);
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -125,18 +127,44 @@ export default function Hero() {
         <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
       </motion.button>
 
-        {/* View CV */}
-      <motion.a
+    {/* View CV Dropdown */}
+    <div className="relative">
+      <motion.button
         whileHover={{ scale: 1.05, y: -2 }}
         whileTap={{ scale: 0.95 }}
-        href="/cv/Ahmed_Hemdan_Resume.pdf"
-        target="_blank"
-        rel="noopener noreferrer"
+        onClick={() => setShowResumeOptions(!showResumeOptions)}
         className="border-2 border-gray-300 dark:border-gray-600 px-8 py-4 rounded-xl shadow-md bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 transition-all font-semibold text-gray-900 dark:text-white hover:border-blue-400 dark:hover:border-blue-500"
       >
         View CV
-      </motion.a>
+      </motion.button>
 
+      {showResumeOptions && (
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: 10 }}
+          className="absolute mt-3 w-72 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-xl overflow-hidden z-50"
+        >
+          <a
+            href="/cv/Ahmed_Hemdan_Machine_Learning_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block px-6 py-4 hover:bg-gray-100 dark:hover:bg-gray-700 transition text-gray-900 dark:text-white"
+          >
+            🤖 Machine Learning Resume
+          </a>
+
+          <a
+            href="/cv/Ahmed_Hemdan_Software_Engineer_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block px-6 py-4 hover:bg-gray-100 dark:hover:bg-gray-700 transition text-gray-900 dark:text-white border-t border-gray-200 dark:border-gray-700"
+          >
+            💻 Software Engineer Resume
+          </a>
+        </motion.div>
+      )}
+    </div>
       {/* Get in Touch */}
       <motion.button
         whileHover={{ scale: 1.05, y: -2 }}
