@@ -6,7 +6,25 @@ import { image, title } from "framer-motion/client";
 
 export default function Projects() {
   const projects = [
-  {
+    {
+      title: "DocuMind – RAG System",
+      description:
+        "Retrieval-Augmented Generation system for intelligent PDF document analysis with semantic search and AI-powered responses using LLaMA.",
+      tech: ["Python", "FastAPI", "Streamlit", "Qdrant", "Sentence-Transformers", "Groq API", "LLaMA"],
+      github: "https://github.com/AhmedNasser23/DocuMind",
+      image:
+        "https://images.unsplash.com/photo-1677691820099-a6e8040aa077?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+    {
+      title: "Tweet-Emotion-Classification",
+      description:
+        "NLP-powered system classifying 400K+ tweets into six emotion categories using CNN with custom Word2Vec embeddings, achieving 93.23% accuracy.",
+      tech: ["Python", "TensorFlow", "Keras", "Gensim", "NLP", "CNN", "Word2Vec", "NumPy", "Pandas"],
+      github: "https://github.com/AhmedNasser23/Tweet-Emotion-Classification",
+      image:
+        "https://plus.unsplash.com/premium_photo-1683121718643-fb18d2668d53?auto=format&fit=crop&w=1200&q=80https://images.unsplash.com/photo-1677691820099-a6e8040aa077?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+    {
     title: "ML-Workshop",
     description:
       "Hands-on machine learning experiments with from-scratch implementations, model evaluation, and reproducible workflows.",
@@ -58,7 +76,7 @@ export default function Projects() {
       github: "https://github.com/AhmedNasser23/FastAPI-Blog-API",
       image:
         "https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=1200&q=80",
-    },
+    }
   ];
 
   const containerVariants = {
