@@ -16,16 +16,16 @@ export default function Projects() {
         "https://images.unsplash.com/photo-1677691820099-a6e8040aa077?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
-      title: "Tweet-Emotion-Classification",
+      title: "EmotionSense – Tweet Emotion Classification",
       description:
         "NLP-powered system classifying 400K+ tweets into six emotion categories using CNN with custom Word2Vec embeddings, achieving 93.23% accuracy.",
       tech: ["Python", "TensorFlow", "Keras", "Gensim", "NLP", "CNN", "Word2Vec", "NumPy", "Pandas"],
-      github: "https://github.com/AhmedNasser23/Tweet-Emotion-Classification",
+      github: "https://github.com/AhmedNasser23/EmotionSense",
       image:
         "https://plus.unsplash.com/premium_photo-1683121718643-fb18d2668d53?auto=format&fit=crop&w=1200&q=80https://images.unsplash.com/photo-1677691820099-a6e8040aa077?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
-    title: "ML-Workshop",
+    title: "ML-Workshop – Hands-on Machine Learning Experiments",
     description:
       "Hands-on machine learning experiments with from-scratch implementations, model evaluation, and reproducible workflows.",
     tech: ["Python", "scikit-learn", "NumPy", "Pandas"],
@@ -34,7 +34,7 @@ export default function Projects() {
         "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=1200&q=80",
     },
         {
-    title: "NFG-Library",
+    title: "NFG-Library - Neural Networks, Fuzzy Logic, Genetic Algorithms",
     description:
       "Modular Java library implementing neural networks, fuzzy logic, and genetic algorithms with practical case studies.",
     tech: ["Java", "Neural Networks", "Genetic Algorithms", "Fuzzy Logic"],
@@ -43,7 +43,7 @@ export default function Projects() {
         "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
     },
     {
-    title: "Fandango Ratings Bias EDA",
+    title: "Fandango Ratings Bias - Exploratory Data Analysis",
     description:
       "Exploratory data analysis project investigating bias in movie rating systems using statistical analysis and visualization.",
     tech: ["Python", "Pandas", "Matplotlib"],
@@ -52,7 +52,7 @@ export default function Projects() {
         "https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=1200&q=80",
     },
     {
-    title: "BazzarBook",
+    title: "BazzarBook - E-commerce Platform",
     description:
       "E-commerce backend system with secure payment processing, role-based authorization, and transactional business logic.",
     tech: ["C#", "ASP.NET Core", "SQL Server", "Stripe"],
